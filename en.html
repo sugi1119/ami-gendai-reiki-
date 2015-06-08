@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ami's Gendai Reiki</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!--<script type="text/javascript" src="js/base.js"></script> -->
+  <script>
+$(function() {
+  $("#panel-btn").click(function() {
+    $("#panel").slideToggle(200);
+    $("#panel-btn-icon").toggleClass("close");
+    return false;
+  });
+});
+</script>
+</head>
+<body>
+  <div class='container'>
+    <!-- header -->
+    <header>
+      <h1>Healing Space Pink Rose Garden</h1>
+      <h2>by ami's Gendai Reiki</h2>
+    </header>
+
+    <!-- nav menu -->
+
+    <nav class="menu">
+
+
+      <div id="panel">
+        <ul class="active">
+          <li class="current-item"><a href="#">home</a></li>
+          <li><a href="#">Healing Menu</a></li>
+          <li><a href="#">Event</a></li>
+          <li><a href="#">Learn &amp; Practice Reiki</a></li>
+          <li><a href="#">About ami</a></li>
+        </ul>
+      </div>
+    <!-- hamburger menu -->
+   <!--  <a class="toggle-nav" href="#"><span id="panel-btn-icon"></span></a> -->
+  <a href="#" class="panel-btn"><span id="panel-btn-icon"></span></a>
+
+    </nav>
+    <div>
+      <h2>The guide to Happiness</h2>
+    </div>
+    <div>
+      <h2>News</h2>
+    </div>
+    <div>
+      <h2>Event Calendar</h2>
+    </div>
+    <div>
+      <h2>Gendai Reiki</h2>
+    </div>
+    <div>
+      <h2>Singing Bowl</h2>
+    </div>
+    <div>
+      <h2>Touch 4 Healing</h2>
+    </div>
+    <div>
+      <h2>Contact</h2>
+    </div>
+    <!-- footer -->
+    <footer>
+      Copyright &#169; 2015 ami's Gendai Reiki, All Rights Reserved
+    </footer>
+  </div>
+
+</body>
+</html>
