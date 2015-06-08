@@ -91,11 +91,13 @@ body{
 
     .menu {
         position:relative;
-        /*width: 15%;*/
+        width: 12%;
         /*display:inline-block;*/
         /*margin-left:80%;*/
-        margin: 0 auto;
-        border: 1px solid red;
+        margin-left: 85%;
+        margin-top: -4.5em;
+        margin-bottom: 2em;
+        border: 1px solid black;
     }
 
     .menu ul.active {
@@ -107,10 +109,11 @@ body{
         text-align: center;*/
       }
 
-     .menu ul {
+     .menu>ul {
         position:absolute;
-        top:120%;
-        left:0px;
+        top:150%;
+        margin-right: 85%;
+        /*left:0px;*/
         padding:10px 18px;
         box-shadow:0px 1px 1px rgba(0,0,0,0.15);
         border-radius:3px;
@@ -138,8 +141,8 @@ body{
     }
 
     .menu a {
-        display:block;
-        margin-right: 0%;
+        display:inline-block;
+        /*margin-right: 0%;*/
         text-align: center
     }
 
@@ -160,10 +163,11 @@ body{
         transition:color linear 0.15s;
     }
 
-    .panel-btn:hover, .panel-btn.active {
+/*, #panel-btn.active */
+    #panel-btn:hover
+    {
         text-decoration:none;
         color:#E87A90;
-
     }
 
     #panel-btn-icon{
