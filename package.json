@@ -1,0 +1,24 @@
+{
+  "name": "ami",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt-responsive-images": "^0.1.6",
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sugi1119/ami-gendai-reiki-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sugi1119/ami-gendai-reiki-/issues"
+  },
+  "homepage": "https://github.com/sugi1119/ami-gendai-reiki-#readme"
+}

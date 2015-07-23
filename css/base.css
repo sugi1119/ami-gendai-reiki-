@@ -1,13 +1,22 @@
 @import url(http://fonts.googleapis.com/css?family=Handlee);
 
 body{
-  background-color: #A5DEE4;
-  color: #656765;
+  background-color: #F3F3F3;
+  color: #4D4D4D;
 }
 
 p{
   line-height: 1.5;
 }
+
+a:link, a:visited{
+  color: #4D4D4D;
+}
+
+a:hover, a:active{
+  color: #F569A8;
+}
+
 
 .container{
   width: 99%;
@@ -66,10 +75,19 @@ p{
 }
 
 @media screen and (max-width: 495px) {
-  header{
+  header .title_bg{
+    width: 100%;
+    height: 12em;
+    margin: 0 0;
     border: 1px solid red;
     background-color: #F3F3F3;
-    margin: 0 0;
+    background: url('../images/rose-500_small.jpg');
+    /*height: 12em;*/
+    /*background: url('../images/uchyuu-500_small.jpg');*/
+    /*margin: 0 0;
+    width: 100%;*/
+
+    /*height: 20em;*/
   }
 
   h1{
@@ -77,7 +95,9 @@ p{
       text-align: center;
       border: 1px solid blue;
       width: 80%;
-      margin: .5em auto;
+      margin-top: .5em;
+      margin-right:auto;
+      margin-left: auto;
     }
 
   h2{
@@ -89,8 +109,8 @@ p{
     }
 
   header h2{
-    margin-top: .5em;
-    width: 80%;
+    margin-top:-0.5em;
+    width: 60%;
   }
 
     p{
@@ -104,6 +124,7 @@ p{
   .wrap{
     width: 100%;
     margin: 0 auto;
+    height: 3em;
   }
 
     .menu {
@@ -246,6 +267,15 @@ p{
 
   .grid_item{
     width: 70%;
+    height: 14em;
+    border: 1px solid red;
+    margin: 0 auto;
+    padding: 1em;
+  }
+
+  .grid_item:first-child{
+    width: 70%;
+    height: 100%;
     border: 1px solid red;
     margin: 0 auto;
     padding: 1em;
@@ -253,13 +283,14 @@ p{
 
   .grid_item:last-child{
     margin-bottom: 1em;
-
   }
 
   .message{
    font-family: 'Handlee', cursive;
    font-size: 1em;
    text-align: center;
+   /*margin-top: -5em;*/
+   /*background-color: #F3F3F3;*/
 }
   .message p{
     font-size: .8em;
@@ -272,17 +303,175 @@ p{
     font-family: arial;
     font-size: .5em;
     font-weight: bold;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
   }
 
   .line{
     display: none;
   }
 
+  #one{
+    background-color: #A5DEE4;
+  }
+  .behind {
+    border: 1px solid red;
+    background-color: #A5DEE4;
+  }
+  .behind li{
+    color: #A5DEE4;
+  }
+
+  #bg_message{
+    background:url('../img/p_rose.svg');
+    background-repeat: no-repeat;
+  }
+
+/*do not use below*/
+  .sx {
+    /*width: 60%;*/
+    /*margin-left: auto;
+    margin-right: auto;*/
+  }
+  .sx img{
+    border: 1px solid red;
+    width: 20%;
+    /*position: relative;*/
+   /* display: inline-block;*/
+  }
+
+  .sx img{
+    -webkit-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-name: slidein;
+    -o-animation-name: slidein;
+    animation-name: slidein;
+  }
+@keyframes slidein {
+    from{
+      margin-bottom: 0%;
+      height: 300%;
+    }
+    to{
+      margin-top: -1500%;
+      line-height: 100%;
+      opacity: 0.1;
+    }
+  }
+
+  @-webkit-keyframes slidein{
+    from{
+      margin-bottom: 0%;
+      height: 300%;
+    }
+    to{
+      margin-top: -1500%;
+      height: 100%;
+      opacity: 0.1;
+    }
+  }
+/*above do not use at this moment */
+
+/*Gendai reiki grid*/
+
+#gendai_grid img{
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  margin-top: -2em;
+  z-index: -1;
+}
+
+#gendai_grid h3{
+  /*margin-top: -5em;*/
+}
+
+/*Singing bowl grid*/
+  .sb_image{
+    max-width: 100%;
+    z-index: -999;
+    /*background-repeat: no-repeat;*/
+
+  }
+
+  .sb_behind{
+    border: 1px solid black;
+    max-width: 100%;
+   /*margin-top: -50em;*/
+    /*margin-bottom: 10em;*/
+    text-align: center;
+    display: none;
+  }
+
+  .sb_behind li{
+    /*margin-left: -1.5em;
+    margin-bottom: 1em;*/
+  }
+
+  /*.hover img{
+    background-repeat: no-repeat;
+  }*/
+
+/*I have no idea what is for?? */
+  .fourth-effect .mask {
+   position:absolute; /* Center the mask */
+   /*top:50px;*/
+   /*left:100px;*/
+   cursor:pointer;
+   /*border-radius: 50px;
+   border-width: 50px;*/
+   display: inline-block;
+   height: 100px;
+   width: 80%;
+   border: 50% solid rgba(0, 0, 0, 0.7);
+   box-sizing:border-box;
+   opacity:1;
+   visibility:visible;
+   transform:scale(4);
+   transition:all 0.3s ease-in-out;
+}
+
+.fourth-effect:hover .mask {
+   opacity: 0;
+   border:0px solid rgba(0,0,0,0.7);
+   visibility:hidden;
+}
+
   footer{
     font-size: 70%;
     text-align: center;
     background-color: #F3F3F3;
+  }
+  .col_check{
+    /*width: 5em;*/
+    height: 1em;
+    position: relative;
+    display: inline-block;
+    color: #4D4D4D;
+  }
+  #dp{
+    background-color: #CC85A7;
+  }
+  #bp{
+    background-color: #E8DAE1;
+  }
+  #pink{
+    background-color: #E6B3D1;
+  }
+  #gg{
+    background-color: #E0EBD9;
+  }
+  #dg{
+    background-color: #CCCFC3;
+  }
+  #gb{
+    background-color: #A3877F;
+  }
+  #cp{
+    background-color: #F569A8;
+  }
+  #color_scheme{
+    background: url('../img/singingbowl.jpg')
   }
 
 }

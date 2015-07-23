@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Healing Space Pink Rose Garden | Ami's Gendai Reiki</title>
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="js/base.js"></script>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="/js/prefixfree.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="js/base.js"></script>
+  <title>Healing Space Pink Rose Garden | Ami's Gendai Reiki</title>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>Healing Space Pink Rose Garden</h1>
-      <h2>from ami's Gendai Reiki</h2>
+      <div class="title_menu">
+        <h1>Healing Space Pink Rose Garden</h1>
+        <h2>ami's Gendai Reiki</h2>
+      <div class="wrap">
+        <nav class="menu">
+            <ul class="active">
+                <li class="current-item"><a href="#">Home</a></li>
+                <li><a href="#">Healing Menu</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Learn &amp; Practice Gendai Reiki</a></li>
+                <li><a href="#">About ami</a></li>
+                <li>contact<br>amisan@email.com<br><a href=""><i class="fa fa-envelope-o"></i></a></li>
+            </ul>
 
-    <div class="wrap">
-      <nav class="menu">
-          <ul class="active">
-              <li class="current-item"><a href="#">Home</a></li>
-              <li><a href="#">Healing Menu</a></li>
-              <li><a href="#">Event</a></li>
-              <li><a href="#">Learn &amp; Practice Gendai Reiki</a></li>
-              <li><a href="#">About ami</a></li>
-              <li>contact<br>amisan@email.com<br><a href=""><i class="fa fa-envelope-o"></i></a></li>
-          </ul>
+          <!-- Humberger menu  -->
+            <a id="panel-btn" href="#"><span id="panel-btn-icon"></span></a>
 
-          <a id="panel-btn" href="#"><span id="panel-btn-icon"></span></a>
-
-        </nav>
+          </nav>
+        </div>
+        <div class="title_bg"></div>
       </div>
       </header>
       <div class="home_content">
         <div class="grid_item">
           <div class="message">
             <h2>The Guide to Happiness</h2>
-              <p>Reiki is not only for hand healing, but really means it is for self-growing awareness.  <a class="read_more" href=""><small>Read more</small></a></p>
-              <div class="more_message">
+              <p>Reiki is not only for hand healing, but really means it is for self-growing awareness.  <a class="read_more" href="" ><small data-text-swap="Close">Read more</small></a></p>
+              <div class="more_message" id="bg_message">
                 <p>While you learn Reiki founded by Dr Mikao Usui who wanted use this technique in order to reach happiness through Reiki.<br>
                 Reiki energy heals the body, mind and spirit and helps you balance your energy harmony.<br>
                 You can absorb, universal energy finding your own self through Reiki.</p>
@@ -46,42 +52,72 @@
           </div><!-- end of message-->
         </div><!-- end of grid_item-->
 
-        <div class="grid_item">
+        <div class="grid_item inside">
           <div class="news">
-            <a class="mouse_show" href="#news_details"><h2>News</h2></a>
+            <a class="mouse_show" href="news"><h2>News</h2>
           </div>
-            <ul class="line">
+            <ul class="behind">
               <li>Up coming events information</li>
+            </ul>
+            </a>
+        </div>
+
+        <div class="grid_item inside">
+          <div>
+            <a class="mouse_show" href="calender_view"><h2>Event Calendar</h2></a>
+          </div>
+          <ul class="behind">
+              <li>Calender view of Healing Space Pink Rose Garden</li>
+            </ul>
+        </div>
+
+        <div class="grid_item inside">
+          <div id="gendai_grid">
+            <a class="mouse_show" href="gendai_reiki"><h2>Gendai Reiki</h2>
+              <img src="img/uchyuu.jpg">
+              <h3>test test test</h3>
+              <!-- <ul class="behind">
+                  <li>Information of Gendai Reiki</li>
+                  <li>Gendai Reiki Seminar, meeting &amp; practice information</li>
+                </ul> -->
+            </a>
+          </div>
+        </div>
+
+        <div class="grid_item">
+          <div class="sb_image">
+            <a class="mouse_show" href="singing bowl"><h2>Singing Bowl</h2>
+            <div class="hover">
+              <!-- <div class="sb_image"></div> -->
+              <img src="img/singingbowl.jpg" class="sb_image">
+            </div>
+              <ul class="sb_behind">
+                  <li>What is Singing Bowl</li>
+                  <li>Benefit of Singing Bowl Healing</li>
+              </ul>
+            </a>
+          </div>
+        </div>
+
+        <div class="grid_item inside">
+          <div>
+            <a class="mouse_show" href="touch_4_healing"><h2>Touch 4 Healing</h2></a>
+          </div>
+            <ul class="behind">
+              <li>What is Touch 4 Healing</li>
+              <li>Benefit of Touch 4 Healing</li>
             </ul>
         </div>
 
         <div class="grid_item">
-          <div>
-            <h2>Event Calendar</h2>
-          </div>
-        </div>
-
-        <div class="grid_item">
-          <div>
-            <h2>Gendai Reiki</h2>
-          </div>
-        </div>
-
-        <div class="grid_item">
-          <div>
-            <h2>Singing Bowl</h2>
-          </div>
-        </div>
-
-        <div class="grid_item">
-          <div>
-            <h2>Touch 4 Healing</h2>
-          </div>
-        </div>
-
-        <div class="grid_item">
-          <div>
-            <h2>Contact</h2>
+          <div class="view fourth-effect">
+            <a href="#" title="Full Image"><h2>Contact</h2>
+           <ul>
+             <li>Ami</li>
+             <li>Contact: </li>
+             <li>e-mail: </li>
+           </ul></a>
+           <div class="mask"></div>
           </div>
         </div>
       </div>
@@ -89,6 +125,15 @@
     <footer>
       Copyright &#169; 2015 ami's Gendai Reiki, All Rights Reserved
     </footer>
+    <div id="color_scheme">
+    <div class="col_check" id="dp">dark pink</div>
+    <div class="col_check" id="bp">beige pink</div>
+    <div class="col_check" id="pink">pink</div>
+    <div class="col_check" id="gg">grey green</div>
+    <div class="col_check" id="dg">dark gren green</div>
+    <div class="col_check" id="gb">grey brown</div>
+    <div class="col_check" id="cp">cherry pink</div>
+    </div>
   </div>
 </body>
 <html>
