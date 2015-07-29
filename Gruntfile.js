@@ -15,8 +15,8 @@ module.exports = function(grunt) {
           engine: 'im',
           sizes: [{
             /* Change these */
-            width: 500,
-            suffix: '_small',
+            width: 382,
+            suffix: '_lsmall',
             quality: 70
           }]
         },
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         */
         files: [{
           expand: true,
-          src: ['*.{gif,jpg,png,JPG}'],
+          src: ['*.{gif,jpg,png,JPG, svg}'],
           cwd: 'img/',
           dest: 'images/'
         }]
