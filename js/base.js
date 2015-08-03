@@ -1,12 +1,16 @@
 $(document).ready(function() {
   // humberger menu function
-    $('.menu a').click(function(e) {
-        $(this).toggleClass('active');
-        $('.menu ul').slideToggle(300, function(){
-          $('.menu ul').toggleClass('active');
-          $('#panel-btn-icon').toggleClass('close');
+    $('#panel-btn').click(function(e) {
+
+        $('#panel-btn-icon').toggleClass('close');
+        $('.menu ul').toggleClass('active');
+        // $('.menu ul').slideToggle(300, function(){
+        //   $('.menu ul').toggleClass('active');
+          // $('#panel-btn-icon').toggleClass('close');
+          $('.home_content').toggleClass('fade_out');
+          $('.title_bg').toggleClass('fade_out');
           return false;
-        })
+        // })
         e.preventDefault();
     });
 
@@ -42,7 +46,9 @@ $(document).ready(function() {
     // );
 
 // #656765 dark grey color
-  // background image change its opaque
+
+
+    // background image change its opaque
   // $('.grid_item').hover(function(){
   //   var $this = $(this);
   //   var $that = $this.find('.hover');
@@ -60,8 +66,6 @@ $(document).ready(function() {
 
   // }
   // );
-
-
 
 
 });
