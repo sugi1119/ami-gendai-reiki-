@@ -1,16 +1,11 @@
 $(document).ready(function() {
   // humberger menu function
     $('#panel-btn').click(function(e) {
-
         $('#panel-btn-icon').toggleClass('close');
-        $('.menu ul').toggleClass('active');
-        // $('.menu ul').slideToggle(300, function(){
-        //   $('.menu ul').toggleClass('active');
-          // $('#panel-btn-icon').toggleClass('close');
-          $('.home_content').toggleClass('fade_out');
-          $('.title_bg').toggleClass('fade_out');
-          return false;
-        // })
+        $('.menu').toggleClass('active');
+        $('.home_content').toggleClass('fade_out');
+        $('.title_bg').toggleClass('fade_out');
+        return false;
         e.preventDefault();
     });
 
